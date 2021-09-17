@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book</title>
+</head>
+<body>
+
+<header class="top">
+    <a href="index.html"><h1>Carbon Based Lifeforms</h1></a>
+</header>
+
+<section class="bookingform">
+<form id="bookingform" action="">
+    <h1>Your Details:</h1>
+    <p><label>Name: <input type="text" name="name" size="30" maxlength="100" placeholder="John Doe" required></label></p>
+    <p><label>Email: <input type="email" name="email" size="30" maxlength="100" placeholder="example@whatevermail.com" required></label></p>
+
+    <h2>Type of booking:</h2>
+        <select name="referrer" id="hear-about">
+            <option value="festival">Festival</option>
+            <option value="rave">Rave</option>
+            <option value="privateparty">Private party</option>
+            <option value="other">Other</option>
+        </select>
+
+    <p><label for="customertext">Message:</label></p>
+    <p><textarea rows="5" cols="30" id="customertext" required></textarea></p>
+
+    <p><label><input type="checkbox" name="subscribe" checked="checked"> Get confirmation via e-mail</label>
+    </p>
+    <p><input type="submit" value="Book us"></p>
+
+</form>
+    <article>
+        <img id="bookimg" src="img/booklive.jpeg" alt="">
+    </article>
+
+</section>
+
+
+<footer>
+    <ul>
+        <li><a href="https://www.facebook.com/carbonbasedlifeforms">Facebook</a></li>
+        <li><a href="https://www.instagram.com/cblofficial/?hl=sv">Instagram</a></li>
+        <li><a href="https://soundcloud.com/carbonbasedlifeforms">Soundcloud</a></li>
+        <li><a href="https://carbonbasedlifeforms.bandcamp.com/">Bandcamp</a></li>
+    </ul>
+</footer>
+</body>
+</html>

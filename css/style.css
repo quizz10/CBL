@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+:root{
+    --complementary: #959648;
+}
+
+.start_img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/*MOBILE*/
+ul, li, h1, h2, a {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+body {
+    background-color: #d7d7d7;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #d7d7d7;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: lighter;
+    color: black;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.banner img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+nav {
+    width: 100%;
+    max-height: border-box;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+}
+
+nav li {
+    font-weight: bold;
+    color: var(--complementary);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    width: 20%;
+    font-size: 20px;
+    padding: 6px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--complementary);
+    font-size: 20px;
+}
+
+nav li:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+
+nav ul {
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.searchbar {
+    display: none;
+}
+
+.discography {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.img-index-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-rows: repeat(9, 250px);
+    justify-content: center;
+    justify-self: center;
+    margin-bottom: 1em;
+    grid-gap: 10px;
+
+}
+
+.img-index-container > a:nth-child(1) {
+    background: url(../img/thepathfront-250px.jpg);
+}
+
+.img-index-container > a:nth-child(2) {
+    background: url(../img/hydrophonicgardenfront-250px.jpg);
+}
+
+.img-index-container > a:nth-child(3) {
+    background: url(../img/worldofsleepersfront-250px.jpg);
+}
+
+.img-index-container > a:nth-child(4) {
+    background: url(../img/interloperfront-250px.jpg);
+}
+
+.img-index-container > a:nth-child(5) {
+    background: url(../img/vlafront-250px.jpg);
+}
+
+.img-index-container > a:nth-child(6) {
+    background: url(../img/twentythreefront-250px.jpg);
+}
+
+.img-index-container > a:nth-child(7) {
+    background: url(../img/refugefront-250px.jpg);
+}
+
+.img-index-container > a:nth-child(8) {
+    background: url(../img/Derelicts-250px.jpg);
+}
+
+.img-index-container > a:nth-child(9) {
+    background: url(../img/stochasticfront-250px.jpg);
+}
+
+/*ABOUT*/
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "image"
+        "paragraphs";
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+
+.about img {
+    grid-area: image;
+    margin: 50px;
+    width: 50vh;
+    height: auto;
+}
+
+.about p {
+    grid-area: paragraphs;
+    margin: 2em 2em;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+/*BOOK*/
+
+.bookingform {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#bookimg {
+  display: none;
+}
+
+/*ALBUMS*/
+
+#tracklist {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+}
+
+#tracklist tr:nth-child(even) {
+    background-color: rgba(242, 242, 242, 0.13);
+}
+
+#tracklist tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.53);
+}
+
+#tracklist tr:hover {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+#tracklist th {
+    width: 311px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#tracklist th.wos {
+    background-color: rgba(40, 46, 132, 0.76);
+}
+
+#tracklist th.tp {
+    background-color: rgba(85, 104, 137, 0.84);
+}
+
+#tracklist th.drlcts {
+    background-color: #c54752;
+}
+
+#tracklist td {
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.track-container article p {
+    margin-top: -5px;
+    line-height: 1.5em;
+}
+
+.albumtext {
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+footer ul {
+    transform: scale(0.7);
+    white-space: nowrap;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer li {
+    color: var(--complementary);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: .7em;
+}
+
+footer li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--complementary);
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1025px) {
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    header a {
+        letter-spacing: 15px;
+    }
+
+    .banner img {
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        align-items: center;
+        object-fit: cover;
+        object-position: 0px 15%;
+    }
+
+    footer li:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+
+    nav {
+        width: 100%;
+        max-height: border-box;
+        margin-top: -10px;
+        background-color: black;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 20px;
+        width: 20%;
+        font-size: 20px;
+        padding: 6px;
+    }
+
+    nav li a {
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    nav li:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    nav ul {
+        white-space: nowrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .searchbar {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        max-height: 30px;
+        font-size: 16px;
+    }
+
+
+
+    main {
+        max-width: 100%;
+        margin: 3em auto;
+        box-sizing: border-box;
+    }
+
+    .discography {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 2em;
+        letter-spacing: 0.6em;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: -1em;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+
+    .img-index-container {
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(3, 250px);
+        justify-content: center;
+        margin-bottom: 1em;
+        grid-gap: 10px;
+    }
+
+    .img-index-container > a:nth-child(1) {
+        background: url(../img/thepathfront-250px.jpg);
+    }
+
+    .img-index-container > a:nth-child(2) {
+        background: url(../img/hydrophonicgardenfront-250px.jpg);
+    }
+
+    .img-index-container > a:nth-child(3) {
+        background: url(../img/worldofsleepersfront-250px.jpg);
+    }
+
+    .img-index-container > a:nth-child(4) {
+        background: url(../img/interloperfront-250px.jpg);
+    }
+
+    .img-index-container > a:nth-child(5) {
+        background: url(../img/vlafront-250px.jpg);
+    }
+
+    .img-index-container > a:nth-child(6) {
+        background: url(../img/twentythreefront-250px.jpg);
+    }
+
+    .img-index-container > a:nth-child(7) {
+        background: url(../img/refugefront-250px.jpg);
+    }
+
+    .img-index-container > a:nth-child(8) {
+        background: url(../img/Derelicts-250px.jpg);
+    }
+
+    .img-index-container > a:nth-child(9) {
+        background: url(../img/stochasticfront-250px.jpg);
+    }
+
+
+    .img-index-container > a:hover {
+        transition: all 0.1s ease-in;
+        opacity: 0.7;
+        transform: scale(0.95);
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 600px 0.5fr;
+        grid-template-areas:
+        "image"
+        "paragraphs";
+        justify-content: center;
+        grid-gap: 20px;
+    }
+
+
+    .about img {
+        grid-area: image;
+        margin: 50px;
+    }
+
+    .about p {
+        grid-area: paragraphs;
+        margin: 2em 2em;
+        font-weight: bold;
+        line-height: 2em;
+    }
+
+    .orderform {
+        transform: scale(0.9);
+        margin-left: 1em;
+    }
+
+    .img-container {
+        display: grid;
+        grid-template-columns: 600px 600px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .track-container {
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-column-gap: 100px;
+        justify-content: center;
+        padding-top: 1em;
+        margin-left: -100px;
+    }
+
+    #tracklist {
+        border: 2px solid rgb(0, 0, 0);
+        border-collapse: collapse;
+        width: 500px;
+        height: auto;
+    }
+
+    #tracklist tr:nth-child(even) {
+        background-color: rgba(242, 242, 242, 0.13);
+    }
+
+    #tracklist tr:nth-child(odd) {
+        background-color: rgba(255, 255, 255, 0.53);
+    }
+
+    #tracklist tr:hover {
+        background-color: rgba(0, 0, 0, 0.16);
+    }
+
+    #tracklist th {
+        width: 311px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    #tracklist th.wos {
+        background-color: rgba(40, 46, 132, 0.76);
+    }
+
+    #tracklist th.tp {
+        background-color: rgba(85, 104, 137, 0.84);
+    }
+
+    #tracklist th.drlcts {
+        background-color: #c54752;
+    }
+
+    #tracklist td {
+        padding-left: 5px;
+        font-weight: bold;
+    }
+
+    .track-container article p {
+        margin-top: -5px;
+        line-height: 1.5em;
+    }
+
+    .albumtext {
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
+
+    .bookingform {
+        display: grid;
+        grid-template-areas:
+        "booking"
+        "image";
+        grid-template-columns: auto auto;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    #bookimg {
+        display: grid;
+        grid-area: image;
+        margin-left:4em;
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+    }
+
+    .media {
+        display: grid;
+        height: auto;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        grid-gap: 5em;
+    }
+    footer {
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+
+    footer ul {
+        transform: scale(0.8);
+        white-space: nowrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer li {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 25%;
+        font-size: 20px;
+    }
+
+}
